@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url(https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+    center center/cover no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  z-index: 0;
+}
+
+.chessboard {
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.chessitsself {
+  border: 8px solid rgb(0, 0, 0);
+  min-width: 576px;
+  min-height: 576px;
+  max-height: 576px;
+  max-width: 576px;
+  z-index: 1;
+}
+
+.gamepage {
+  background: url(https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80)
+    center center/cover no-repeat;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.aboutchess {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.player1 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  border: 4px solid white;
+  border-style: double;
+  margin: 15px 150px 50px 150px;
+  color: #ffffff;
+}
+.player2 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  border: 4px solid white;
+  border-style: double;
+  margin: 15px 150px 50px 150px;
+  color: #ffffff;
+}
+.player3 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  border: 4px solid white;
+  border-style: double;
+  margin: 15px 150px 50px 150px;
+  color: #ffffff;
+}
+.player4 {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  border: 4px solid white;
+  border-style: double;
+  margin: 15px 150px 50px 150px;
+  color: #ffffff;
+}
+game-btns {
+  display: flex;
+  padding: 8px 20px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btns {
+  display: flex;
+}
+
+.history {
+  display: flex;
+  border: solid 4px #ffffff;
+  height: 150px;
+  width: 500px;
+  color: #ffffff;
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+li {
+  display: inline-table;
+}
+ol {
+  max-width: 500px;
+  max-height: 150px;
+}
+
+.history-box h1 {
+  color: #ffffff;
+  margin-left: 150px;
+}
+
+img {
+  width: 45vh;
+  border-radius: 20%;
+}
+
+.photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.abu{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+.abu a{
+  color: #ffffff;
+}
+
+
+.top{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  color: #ffffff;
+  text-align: center;
+}
+.top a{
+color:#ffffff;
+}
+
+.Middle{
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+  color: #ffffff;
+  text-align: center;
+}
+.Middle a{
+  color:#ffffff;
+}
+
+.WinPrompt{
+  opacity: 75%;
+  display: block;
+  position: absolute;
+  background-color: rgba(2, 2, 2, 0.5);
+  color: white;
+  right: 1;
+  width: 560px;
+  height: 560px;
+  z-index: 2;
+}
+
+.prompt{
+  display: grid;
+  justify-content: center;
+  align-self: center;
+  z-index: 3;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  position: absolute;
+  width: 560px;
+  height: 560px;
+}
+.childPrompt{
+  display: inline-block;
+  justify-content: center;
+  align-self: center;
+  height: 350px;
+  width: 250px;
+  background: url(https://images.unsplash.com/photo-1576092762791-dd9e2220abd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) center center/cover no-repeat;
+  background-color: whitesmoke;
+  border-radius: 4%;
+  border-left: 8px dashed whitesmoke;
+  border-right: 8px dashed whitesmoke;
+  border-top: 8px dashed #000000;
+  border-bottom: 8px dashed #000000;
+}
+.YouWin{
+  border-radius: 4%;
+  color: #82df00;
+  font-size: 3rem;
+  padding-top: 25px;
+}
+.YouLose{
+  border-radius: 4%;
+  color: #ff1e00;
+  font-size: 3rem;
+  padding-top: 25px;
+}
+.WinBox{
+  display: grid;
+}
+.playAgainParent{
+  display: grid;
+  padding-top: 70%;
+  justify-content: center;
+  align-self: end;
+}
