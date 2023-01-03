@@ -1,29 +1,22 @@
 # WCCI-Chess
 This is the final project for my We Can Code IT C# bootcamp. It is a chess application with a single-player option against a Chess AI that we built, as well as a multi-player option with an integrated chat room.
+
 Technologies used:
 
-React
-
-JavaScript
-
-Socket.IO
+React /JavaScript / Socket.IO
 
 Libraries:
 
-chess.js
-
-react-chessboard.js
+chess.js / react-chessboard.js
 
 Once you have pulled the repo, following instructions below.
 
-4.) Install the following node packages in order.
+4.) Run the following commands
 
     - npm install react-player
     - npm i react-router-dom socket.io-client
 
-5.) Next you need to cd into server/ 
-
-6.) next you will have to install these Node Modulas inside the "server" file
+5.) Cd into the Server directory and run the following commands
     
     - npm init -y
     - npm i axios cors express socket.io dotenv
@@ -31,10 +24,10 @@ Once you have pulled the repo, following instructions below.
 
 # To run the App
 
-1.) Have two terminals open. One for the chessboard-app and one for the server
+1.) Have two terminals open. One for the root-directory and one for the server
 
-2.) Ensure you are in the chessboard-app terminal to do the " npm start "
+2.) Run "npm start" from the root terminal
 
-3.) Next on the server terminal do "npm run dev"
+3.) Run "npm run dev" from the Server terminal
 
 4.) The Applicaiton should be running correctly.
